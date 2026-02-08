@@ -1,0 +1,12 @@
+langchain 
+langgraph 
+langchain-community
+dotenv
+streamlit
+numpy==2.0.2
+keras==3.10.0
+tensorflow==2.19.0
+pymongo
+pandas
+requests
+pillow
