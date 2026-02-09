@@ -1,0 +1,17 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+psycopg2-binary
+python-dotenv
+numpy
+pandas
+scikit-learn
+opencv-python
+pillow
+langdetect
+textblob
+websockets
+joblib
+langchain
+langchain-google-genai
