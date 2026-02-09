@@ -1,14 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from core.config import settings
-from core.logger import logger
-from api.PCOS_controller import pcos_router
-from conversational_module.utils.chat_Controller import cnv_router
+from src.api.PCOS_controller import pcos_router
+from src.conversational_module.chat_Controller import cnv_router
 
 
 
 
-logger = setup_logger()
+# logger = setup_logger()
 
 app = FastAPI(
     title ="Hitayu AI",
@@ -30,7 +28,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    logger.info("API is running")
+    # logger.info("API is running")
     return {
         'status':'running',
         'service':'Hitayu AI',

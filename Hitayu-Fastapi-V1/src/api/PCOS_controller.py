@@ -8,7 +8,7 @@ pcos_router = APIRouter()
 
 
 #load model
-model = joblib.load("models/pcos_model.pkl")
+model = joblib.load("src/models/pcos_model.pkl")
 
 
 
@@ -27,7 +27,7 @@ class PCOSOutput(BaseModel):
     confidence: float
 
 
-@app.post("/predict", response_model=PCOSOutput)
+@pcos_router.post("/predict", response_model=PCOSOutput)
 def predict_pcos(data: PCOSInput):
 
     input_data = np.array([[
